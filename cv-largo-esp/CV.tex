@@ -35,8 +35,8 @@
 % CV Info (to be customized).
 \newcommand{\CVAuthor}{Leandro Pineda}
 \newcommand{\CVTitle}{Curriculum Vitae}
-\newcommand{\CVNote}{Documento actualizado el {\today}}
-\newcommand{\CVWebpage}{www.linkedin.com/in/leandropineda-lp}
+\newcommand{\CVNote}{Última actualización {\Timestamp}}
+\newcommand{\CVWebpage}{}
 
 % PDF settings and properties.
 \hypersetup{
@@ -70,19 +70,17 @@ breaklinks}
 %%%%%%%%%%%%%%%
 
 \title{\CVAuthor}
-
+\vspace{.5cm}
 \begin{subtitle}
 Av. Facundo Zuviría 4016, Santa Fe, Argentina\, \SubBulletSymbol\, Edad 27 años
 \par
-\href{mailto:leandropineda.lp@gmail.com}
+\hspace{-4cm}\href{mailto:leandropineda.lp@gmail.com}
 {leandropineda.lp@gmail.com}
 \,\SubBulletSymbol\,
 +54\,342\,4-794-999
-\,\SubBulletSymbol\,
-\href{\CVWebpage}
-{\CVWebpage}
 \end{subtitle}
-
+ 
+\hspace{14.5cm}\smash{\includegraphics[width=3.5cm]{photo}}
 \begin{body}
 
 %%%%%%%%%%%%%%%
@@ -107,6 +105,13 @@ Actualidad
 	\SubBulletItem
 	Materias aprobadas: 34 \SubBulletSymbol\, Porcentaje de avance: 81\%.
 	\SubBulletItem Promedio con aplazos: 7.50 \SubBulletSymbol\, Promedio sin aplazos: 8.06.
+
+\end{detail}
+\BulletItem	Tesis: Diseño de un sistema de detección de anomalı́as en redes de computadoras.
+\begin{detail}
+	\SubBulletItem
+	Objetivo: implementar un sistema distribuido de detección de anomalías en redes ethernet, utilizando técnicas de \textit{data streaming} para procesar en tiempo real la información de la cabecera de los paquetes TCP/IP y los logs de acceso de servicios, para identificar cambios significativos con respecto a un modelo de comportamiento normal.
+	
 \end{detail}
 
 \BigGap
@@ -320,7 +325,7 @@ Santa Fe, Santa Fe, Argentina
 
 \GapNoBreak
 \BulletItem
-Soporte Técnico y Administrador de Sistemas
+Administrador de sistemas
 \hfill
 \DatestampYM{2014}{08} --
 Actualidad
@@ -328,9 +333,9 @@ Actualidad
 \SubBulletItem
 Administración de servidores GNU/Linux.
 \SubBulletItem
-Administración y mantenimiento de redes.
+Diagnóstico y mantenimiento de redes.
 \SubBulletItem
-Administración de aplicaciones basadas en arquitecturas de microservicios.
+DevOps de proyecto: https://bitbucket.org/sinc-lab/webdemobuilder-docker
 \end{detail}
 
 %%%%%%%%%%%%%%%%%%
@@ -341,6 +346,7 @@ Administración de aplicaciones basadas en arquitecturas de microservicios.
 {Capacitación}
 {Capacitación}
 {PDF:Capacitación}
+
 
 \textbf{LAN bajo MikroTik: Capas 1 y 2.}
 \hfill
@@ -356,6 +362,40 @@ Administración de aplicaciones basadas en arquitecturas de microservicios.
 Duración: 32 horas \SubBulletSymbol\, Santa Fe, Argentina.
 
 \BigGap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Functional Programming Principles in Scala}
+\hfill
+\DatestampYM{2016}{07}
+
+\BulletItem École Polytechnique Fédérale de Lausanne en \href{coursera.org}{http://www.coursera.org}.
+\begin{detail}
+	\SubBulletItem
+	Functions \& Evaluation. Higher Order Functions. Data and Abstraction. Types and Pattern Matching. Lists. Collections
+	\SubBulletItem
+	Certificado: \href{https://www.coursera.org/account/accomplishments/records/XP7CXSHS2PV8}
+	{https://www.coursera.org/account/accomplishments/records/XP7CXSHS2PV8}
+	
+\end{detail}
+
+
+\BigGap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{6.00.1x: Introduction to Computer Science and Programming Using Python }
+\hfill
+\DatestampYM{2016}{03}
+
+\BulletItem  edx, Inc. (MOOC platform)
+\begin{detail}
+	\SubBulletItem
+	Introduction. Core elements of programs. Simple algorithms. Functions. Recursion. Objects. Debugging. Assertions and Exceptions. Efficiency and orders of growth. Memory and search. Classes. Object Oriented Programming	and Inheritance. Trees.
+	\SubBulletItem
+	Certificado: \href{https://courses.edx.org/certificates/c8d7817c072644b191489164127b815d}
+	{https://courses.edx.org/certificates/c8d7817c072644b191489164127b815d}
+	
+\end{detail}
+
+
+\BigGap
 \textbf{Administración de redes informáticas mediante MikroTik}
 \hfill
 \DatestampYM{2015}{12}
@@ -368,6 +408,8 @@ Duración: 32 horas \SubBulletSymbol\, Santa Fe, Argentina.
 \end{detail}
 Duración: 20 horas \SubBulletSymbol\, Santa Fe, Argentina.
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%
 %% CURSOS Y CONGRESOS %%
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -376,6 +418,24 @@ Duración: 20 horas \SubBulletSymbol\, Santa Fe, Argentina.
 {CursosCongresos}
 {PDF:CursosCongresos}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Redes Neuronales Profundas}
+\hfill
+\DatestampYM{2016}{08} --
+Actualidad
+
+\BulletItem Escuela de Posgrado y Educación Continua - UNR. Centro Internacional Franco Argentino de Ciencias de la Información y de Sistemas - CONICET.
+\begin{detail}
+	\SubBulletItem 
+	Introducción al aprendizaje automatizado. Redes neuronales artificiales. Técnicas de regularizacion. Redes convolucionales. Aprendizaje de representaciones.
+	
+	\SubBulletItem
+	Material del curso: \href{http://github.com/CIFASIS/deep-learning-course}
+	{http://github.com/CIFASIS/deep-learning-course}
+\end{detail}
+Duración: 70 días \SubBulletSymbol\, Rosario, Argentina.
+
+\BigGap
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{45º JAIIO - Jornadas Argentinas de Informática}
 \hfill
@@ -486,6 +546,9 @@ Ingles: Nivel medio.
 \GapNoBreak
 \BulletItem
 Español: Nativo.
+\GapNoBreak
+\BulletItem
+Ciudadanía Española por Opción.
 
 %%%%%%%%%%%%
 %% SKILLS %%
@@ -505,6 +568,20 @@ Otros lenguajes: Java \SubBulletSymbol\, Scala \SubBulletSymbol\, SQL \SubBullet
 \textbf{Tecnologías}
 \BulletItem Apache Spark \SubBulletSymbol\, Apache Flink \SubBulletSymbol\, Apache Kafka \SubBulletSymbol\, Docker
 
+%%%%%%%%%%%
+%% LINKS %%
+%%%%%%%%%%%
+
+\section
+{Links}
+{Links}
+{PDF:Links}
+
+\BulletItem
+\href{https://github.com/leandropineda}{github.com/leandropineda}
+\BulletItem
+\href{https://www.linkedin.com/in/leandropineda-lp}{linkedin.com/in/leandropineda-lp}
+
 %%%%%%%%%%%%%%%
 %% INTERESTS %%
 %%%%%%%%%%%%%%%
@@ -516,7 +593,18 @@ Otros lenguajes: Java \SubBulletSymbol\, Scala \SubBulletSymbol\, SQL \SubBullet
 
 Seguridad Informática, Machine Learning, Redes de Información, Big Data, Infraestructura.
 
-	
+
+%%%%%%%%%%%%%%%
+%% AFICIONES %%
+%%%%%%%%%%%%%%%
+
+\section
+{Aficiones}
+{Aficiones}
+{PDF:Aficiones}
+
+Gimnasio, Correr, Pesca.
+
 
 %%%%%%%%%%%%%%%%%
 %%% REFERENCES %%
@@ -773,7 +861,7 @@ Seguridad Informática, Machine Learning, Redes de Información, Big Data, Infra
 
 \UseNoteFont%
 \null\hfill%
-[\textit{\CVNote}]%
+\textit{\CVNote}%
 \hspace{2.0mm}\null
 
 \end{document}

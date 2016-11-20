@@ -94,44 +94,46 @@ includefoot]{geometry}
 % {\color{MyDarkBlue}This text is dark blue}
 
 % Current date and time.
+\RequirePackage[spanish]{babel}
 \RequirePackage[yyyymmdd,24hr]{datetime}
 \renewcommand{\dateseparator}{-}
 \settimeformat{xxivtime}
+\newdateformat{myMMMYYYY}{\monthname[\THEMONTH] de \THEYEAR}
 % {\today}~{\currenttime}
 
 % Timestamp.
-\newcommand{\Timestamp}{{\yyyymmdddate\today}~{\currenttime}}
+\newcommand{\Timestamp}{{\myMMMYYYY\today}}
 
 % Abbreviations for months.
 \newcommand{\LongMonth}[1]{%
 \ifcase#1\relax
-\or January%
-\or February%
-\or March%
-\or April%
-\or May%
-\or June%
-\or July%
-\or August%
-\or September%
-\or October%
-\or November%
-\or December%
+\or Enero%
+\or Febrero%
+\or Marzo%
+\or Abril%
+\or Mayo%
+\or Junio%
+\or Julio%
+\or Agosto%
+\or Septiembre%
+\or Octubre%
+\or Noviembre%
+\or Diciembre%
 \fi}
 \newcommand{\ShortMonth}[1]{%
 \ifcase#1\relax
-\or Jan%
+\or Ene%
 \or Feb%
 \or Mar%
-\or Apr%
+\or Abr%
 \or May%
 \or Jun%
 \or Jul%
-\or Aug%
+\or Ago%
 \or Sep%
 \or Oct%
 \or Nov%
-\or Dec%
+\or Dic%
 \fi}
 
 % XeLaTeX packages.
@@ -176,8 +178,8 @@ BoldItalicFont=FreeSerifBoldItalic]
 \newcommand{\UseHeadingFont}{\normalfont}
 \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{8.2pt}{9.5pt}\selectfont}
 \newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{8pt}{9.6pt}\selectfont}
-\newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\selectfont\bfseries}
-\newcommand{\UseSubTitleFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
+\newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\hspace{-4cm}\selectfont\bfseries}
+\newcommand{\UseSubTitleFont}{\normalfont\fontsize{8.6pt}{10.3pt}\hspace{-4cm}\selectfont}
 \newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{9pt}{11pt}\selectfont\bfseries}
 \newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{8.6pt}{10.3pt}\selectfont\bfseries}
 \newcommand{\UseDetailFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
