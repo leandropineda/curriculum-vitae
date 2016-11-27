@@ -1,0 +1,871 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TeX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,MMMyyyy,nonstop]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, draft, nonstop
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Leandro Pineda}
+\newcommand{\CVTitle}{Curriculum Vitae}
+\newcommand{\CVNote}{Last update {\Timestamp}}
+\newcommand{\CVWebpage}{}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+\vspace{.5cm}
+\begin{subtitle}
+Av. Facundo Zuviría 4016, Santa Fe, Argentina\, \SubBulletSymbol\, 27 years old
+\par
+\hspace{-4cm}\href{mailto:leandropineda.lp@gmail.com}
+{leandropineda.lp@gmail.com}
+\,\SubBulletSymbol\,
++54\,342\,4-794-999
+\end{subtitle}
+ 
+\hspace{14.5cm}\smash{\includegraphics[width=3.5cm]{photo}}
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+\textbf{Universidad Nacional del Litoral},
+Santa Fe, Santa Fe, Argentina
+\hfill
+\DatestampY{2009} --
+Today
+
+\BulletItem Facultad de Ingeniería y Ciencias Hídricas
+\begin{detail}
+	\SubBulletItem
+	Degree in Computer Engineering, expected graduation 2017.
+	\SubBulletItem
+	Approved courses: 34 \SubBulletSymbol\, Progress: 81\%.
+	\SubBulletItem Partial G.P.A.: 8.06.
+
+\end{detail}
+\BulletItem	Thesis: Designing a computer network anomaly detection system.
+\begin{detail}
+	\SubBulletItem
+	Objective: design and implement an ethernet network distributed anomaly detection system, using \textit{data streaming} techniques to process in real time TCP/IP header's information and data logs from different application services, in order to identify significant changes with regard a normal behaviour model.
+	
+\end{detail}
+
+\BigGap
+\textbf{E.E.T. Nº 478 "Dr. Nicolás Avellaneda"},
+Santa Fe, Santa Fe, Argentina
+\hfill
+\DatestampY{2005} --
+\DatestampY{2008}
+\BulletItem Educación Polimodal
+\begin{detail}
+	\SubBulletItem
+	Bachelor's degree: Computer Technician.
+	\SubBulletItem
+	G.P.A.: 8.05.
+\end{detail}
+
+%\href{http://www.example.com/my-university}{\textbf{Escuela Industrial Superior}},
+\BigGap
+\textbf{Escuela Industrial Superior},
+Santa Fe, Santa Fe, Argentina
+\hfill
+\DatestampY{2002} --
+\DatestampY{2004}
+\BulletItem
+Third cycle complete - Educación General Básica.
+
+\BigGap
+\textbf{Escuela Nº 331 “Alte. Guillermo Brown”},
+Santa Fe, Santa Fe, Argentina
+\hfill
+\DatestampY{2001}{}
+
+\BigGap
+\textbf{Colegio Don Bosco},
+Bahia Blanca, Buenos Aires, Argentina
+\hfill
+\DatestampY{1995} --
+\DatestampY{2000}
+
+\GapNoBreak
+\BulletItem
+Second cycle complete - Educación General Básica.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section
+%{Research Experience}
+%{Research Experience}
+%{PDF:ResearchExperience}
+%
+%\href{http://www.example.com/my-institute}
+%{\textbf{Institute for Advanced Research}},
+%Science College
+%
+%\GapNoBreak
+%\BulletItem
+%Undergraduate Research Student, Science Department
+%\hfill
+%\DatestampYMD{2004}{05}{15} --
+%\DatestampYMD{2005}{05}{15}
+%\begin{detail}
+%\SubBulletItem
+%Project:
+%Investigations on the Use of Lasers to Measure Climate Change
+%\SubBulletItem
+%Supervisors:
+%Prof.~Jane~Citizen and
+%Dr~Ann~Yone
+%\SubBulletItem
+%Focus:
+%Climate change, lasers, statistical analysis, data analytics.
+%\end{detail}
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+%\section
+%{Publications}
+%{Publications}
+%{PDF:Publications}
+%
+%\subsection
+%{Journals}
+%{Journals}
+%{PDF:Journals}
+%
+%\GapNoBreak
+%\NumberedItem{[11]}
+%\href{http://www.example.com/my-paper-doi-5}
+%{\underline{J.~Doe}, J.~Citizen, and A.~Yone,
+%``On lasers and climate change,''
+%\textit{Journal of Science},
+%vol.~89,
+%no.~2,
+%pp.~4123--4133,
+%\DatestampYM{2008}{02}.}
+%
+%% Note the use of {\CharSpace} for aligning shorter numbers.
+%\Gap
+%\NumberedItem{{\CharSpace}[1]}
+%\href{http://www.example.com/my-paper-doi-4}
+%{\underline{J.~Doe} and J.~Citizen,
+%``Measuring the extent of climate change,''
+%\textit{Global Scientific Journal},
+%vol.~12,
+%no.~4,
+%pp.~330--352,
+%\DatestampYM{2006}{12}.}
+%
+%\BigGap
+%\subsection
+%{Conferences}
+%{Conferences}
+%{PDF:Conferences}
+%
+%\GapNoBreak
+%\NumberedItem{[11]}
+%\href{http://www.example.com/my-paper-doi-3}
+%{\underline{J.~Doe}, J.~Citizen, and A.~Yone,
+%``On lasers and climate change,''
+%in \textit{Proceedings of the Laser Symposium},
+%Las Vegas, Nevada, USA,
+%\DatestampYM{2007}{01}.}
+%
+%\Gap
+%\NumberedItem{[10]}
+%\href{http://www.example.com/my-paper-doi-2}
+%{A.~Yone and \underline{J.~Doe},
+%``Climate change and general relativity,''
+%in \textit{Proceedings of the International Astronomical Conference},
+%Sydney, Australia,
+%\DatestampYM{2006}{8}.}
+%
+%% Note the use of {\CharSpace} for aligning shorter numbers.
+%\Gap
+%\NumberedItem{{\CharSpace}[1]}
+%\href{http://www.example.com/my-paper-doi-1}
+%{\underline{J.~Doe} and J.~Citizen,
+%``Measuring the extent of climate change,''
+%in \textit{Proceedings of the International Climate Change Conference},
+%London, UK,
+%\DatestampYM{2005}{11}.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section
+%{Professional Affiliations\newline
+%\& Activities}
+%{Professional Affiliations \& Activities}
+%{PDF:ProfessionalAffiliationsActivities}
+%
+%\href{http://www.example.com/my-society}
+%{\textbf{Society of Professional Earth Scientists}},
+%New York, USA
+%
+%\GapNoBreak
+%\BulletItem
+%Member
+%\hfill
+%\DatestampY{2009} --
+%Present
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section
+%{Campus Activities}
+%{Campus Activities}
+%{PDF:CampusActivities}
+%
+%\href{http://www.example.com/my-club}
+%{\textbf{First Volunteers Club}},
+%First American University
+%
+%\GapNoBreak
+%\BulletItem
+%President
+%\hfill
+%\DatestampYMD{2006}{08}{15} --
+%\DatestampYMD{2007}{08}{15}
+%\begin{detail}
+%\SubBulletItem
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+%\SubBulletItem
+%Curabitur vitae laoreet velit, vel ultricies est. Nam nec elit ac ante facilisis ultrices.
+%\SubBulletItem
+%Integer sit amet turpis dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at orci eu leo vulputate finibus sed et sem.
+%\SubBulletItem
+%Suspendisse volutpat sapien et mi cursus, gravida ornare mauris sollicitudin.
+%\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Professional \newline
+	Experience}
+{ProfessionalExperience}
+{PDF:ProfessionalExperience}
+
+\href{http://www.sinc.unl.edu.ar}
+{\textbf{Research Institute sinc(i)}},
+Santa Fe, Santa Fe, Argentina
+
+\GapNoBreak
+\BulletItem
+System Administrator
+\hfill
+\DatestampYM{2014}{08} --
+Today
+\begin{detail}
+\SubBulletItem
+GNU/Linux server administrator.
+\SubBulletItem
+Network maintenance
+\SubBulletItem
+DevOps at project: https://bitbucket.org/sinc-lab/webdemobuilder-docker
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%
+%% CAPACITACION %%
+%%%%%%%%%%%%%%%%%%
+
+\section
+{Courses\newline Taken}
+{CoursesTaken}
+{PDF:CoursesTaken}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Deep Neuronal Networks}
+\hfill
+\DatestampYM{2016}{08} --
+Today
+
+\BulletItem Escuela de Posgrado y Educación Continua - UNR. Centro Internacional Franco Argentino de Ciencias de la Información y de Sistemas - CONICET.
+\begin{detail}
+	\SubBulletItem 
+	Introduction to Machine Learning. Artificial Neural Networks. Regularization techniques. Convolutional networks. Representation learning.
+	
+	\SubBulletItem
+	Course repository: \href{http://github.com/CIFASIS/deep-learning-course}
+	{http://github.com/CIFASIS/deep-learning-course}
+\end{detail}
+Duration: 60 hours \SubBulletSymbol\, Rosario, Argentina.
+
+\BigGap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{LAN under MikroTik: Layer 1 \& 2.}
+\hfill
+\DatestampYM{2016}{10}
+
+\BulletItem Know the layer 1 and 2 protocols and their configuration using Mikrotik.
+
+\begin{detail}
+	\SubBulletItem 
+	Ethernet configuration. Speed, Duplex/Half Duplex, statistics. Labels and commentaries. Understanding data from Torch. Bridge mode.  L2 filters. L2 NAT. STP y RST. Bridge between ethernet and WiFi. VLAN. Cloud routers. IVL. CVS. Mesh networks. HWMPlus networks. L2 point-to-point connections. PPP and L2TP.  Profiles. Configuration as a client and as a server. PPPoE protocol.
+	\SubBulletItem Teaching: Pablo Roa.
+\end{detail}
+Duration: 32 hours \SubBulletSymbol\, Santa Fe, Argentina.
+
+\BigGap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Functional Programming Principles in Scala}
+\hfill
+\DatestampYM{2016}{07}
+
+\BulletItem École Polytechnique Fédérale de Lausanne en \href{coursera.org}{http://www.coursera.org}.
+\begin{detail}
+	\SubBulletItem
+	Functions \& Evaluation. Higher Order Functions. Data and Abstraction. Types and Pattern Matching. Lists. Collections
+	\SubBulletItem
+	Certificate: \href{https://www.coursera.org/account/accomplishments/records/XP7CXSHS2PV8}
+	{https://www.coursera.org/account/accomplishments/records/XP7CXSHS2PV8}
+	
+\end{detail}
+
+
+\BigGap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{6.00.1x: Introduction to Computer Science and Programming Using Python }
+\hfill
+\DatestampYM{2016}{03}
+
+\BulletItem  edx, Inc. (MOOC platform)
+\begin{detail}
+	\SubBulletItem
+	Introduction. Core elements of programs. Simple algorithms. Functions. Recursion. Objects. Debugging. Assertions and Exceptions. Efficiency and orders of growth. Memory and search. Classes. Object Oriented Programming	and Inheritance. Trees.
+	\SubBulletItem
+	Certificate: \href{https://courses.edx.org/certificates/c8d7817c072644b191489164127b815d}
+	{https://courses.edx.org/certificates/c8d7817c072644b191489164127b815d}
+	
+\end{detail}
+
+
+\BigGap
+\textbf{Network Management using Mikrotik}
+\hfill
+\DatestampYM{2015}{12}
+
+\BulletItem Know the Routerboard hardware platform, their scope and performance. Manage a Mikrotik node under different modalities. Know specifications and hardware requirements.
+\begin{detail}
+	\SubBulletItem 
+	Different hardware platforms. Performance and application of each Routerboard type. Licenses. Routerboard and PC. Routerboard BIOS management. Booting from the FLASH NAND. Management and remote access. Access under RS232. Commands through the terminal. Password reset. Software upgrade. Mikrotik information repository. Common failures and problems.
+	\SubBulletItem Teaching: Pablo Roa.
+\end{detail}
+Duration: 20 hours \SubBulletSymbol\, Santa Fe, Argentina.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% CONFERENCES AND SEMINARS %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conferences\newline 
+	and Seminars}
+{ConferencesSeminars}
+{PDF:ConferencesSeminars}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{45º JAIIO - Jornadas Argentinas de Informática}
+\hfill
+\DatestampYM{2016}{09}
+
+\BulletItem Sociedad Argentina de Informática – Centro Cultural Borges at UNTREF.
+\begin{detail}
+	\SubBulletItem
+	Each JAIIOs is organized as a set of separated symposia, each one dedicated to a specific theme, one or two days long, in order to allow interaction of its participants. Parallel sessions are held where papers are published in annual reports, research results are discussed, as well as conferences and meetings with the assistance of Argentine and foreign professionals.
+\end{detail}
+Duration: 3 days \SubBulletSymbol\, Buenos Aires, Argentina.
+
+\BigGap
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Introduction to Application Security - Microsoft Research}
+\hfill
+\DatestampYM{2016}{07}
+
+\BulletItem Escuela de Ciencias Informáticas – Departamento de Computación, UBA.
+\begin{detail}
+	\SubBulletItem
+	This course will introduce students to adversarial mindset, i.e., how to think like an attacker, and will include an overview of the most common types of vulnerabilities in use in exploitation today, including buffer overruns and the most common web vulnerabilities such as cross-site scripting and SQL injection.
+	\SubBulletItem
+	Thematics: Introduction to the adversarial mindset. Memory safety and buffer overruns. Web application security. Privacy. Tools for static and runtime analysis. Hacking for fun and profit: case studies: cars, routers, and other devices.
+	\SubBulletItem
+	Teaching: Ben Livshits.
+	\SubBulletItem
+	Grade: 8 (eight).
+\end{detail}
+Duration: 5 days \SubBulletSymbol\, Buenos Aires, Argentina.
+
+\BigGap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Internet of Things - Cablevisión}
+\hfill
+\DatestampYM{2016}{07}
+
+\BulletItem Escuela de Ciencias Informáticas – Departamento de Computación, UBA.
+\begin{detail}
+	\SubBulletItem
+	Objective: show what is IoT starting from what can be done today, giving practical examples and showing what this technology has to offer for people who are willing to pay for these services.
+	\SubBulletItem
+	Teaching: Gabriel Carro - R\&D department.
+\end{detail}
+Duration: 5 days \SubBulletSymbol\, Buenos Aires, Argentina.
+
+\BigGap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Cyber-security principles for enterprise environments - Intel Security}
+\hfill
+\DatestampYM{2016}{07}
+
+\BulletItem Escuela de Ciencias Informáticas – Departamento de Computación, UBA.
+\begin{detail}
+	\SubBulletItem
+	Objective: present how the security of an enterprise is structured for the purpose of protecting and defending it. Also discussed are some known tactics, techniques and procedures (TTPs) that are being used in cyber-attacks.
+	\SubBulletItem
+	Thematics: Anatomy of an attack and the \textit{Cyber Kill Chain}. Network security and enterprise infrastructure. Defence in depth. Protecting enterprise networks. Protecting enterprise \textit{endpoints}.
+	\SubBulletItem
+	Teaching: Matías Cuenca-Acuna, Leonardo Frittelli, Marcelo Lorenzati,  María  Emilia  Torino and Gustavo Yaguez.
+	\SubBulletItem
+	Grade: 10 (ten).
+\end{detail}
+Duration: 5 days \SubBulletSymbol\, Buenos Aires, Argentina.
+
+\BigGap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{VI Iberoamerican Congress of Researchers and Teachers of Law and Informatics}
+\hfill
+\DatestampYM{2016}{05}
+
+\BulletItem Facultad de Ingeniería y Ciencias Hídricas – Universidad Nacional del Litoral.
+\begin{detail}
+	\SubBulletItem
+	The Iberoamerican Congress of Researchers and Teachers of Law and Informatics, is a meeting that convene Teachers and Researchers of the relationship between Law and Informatics, with the intention of generating an area that allows to share and develop further investigation, to generate ties of cooperation in order to deepen the knowledge from debate and exchange of ideas.
+\end{detail}
+Duration: 3 days \SubBulletSymbol\, Santa Fe, Argentina.
+
+\BigGap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{The role of vision in entrepreneurship}
+\hfill
+\DatestampYM{2015}{02}
+
+\BulletItem Secretaría de Vinculación Tecnológica y Desarrollo Productivo – Universidad Nacional del Litoral.
+\begin{detail}
+	\SubBulletItem
+	Objective: Identify the importance of the mission and vision for the success of the enterprise, providing the main techniques and tools that facilitate its materialization.
+	\SubBulletItem
+	Thematics: Characteristics of the entrepreneur. The mission of the entrepreneurship. The vision of the future of the entrepreneur. Carrying forward the Mission and Vision: the Business Plan.
+	\SubBulletItem
+	Teaching: Gustavo Miazzi and Hugo Amante. 
+\end{detail}
+Duration: 6 hours \SubBulletSymbol\, Santa Fe, Argentina.
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\section
+{Languajes}
+{Languajes}
+{PDF:Languajes}
+
+\BulletItem
+English: Fluent.
+
+\GapNoBreak
+\BulletItem
+Spanish: Native.
+\GapNoBreak
+\BulletItem
+Spanish Citizenship by Option.
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\textbf{Programming}
+\BulletItem
+Advanced Knowledge: Python \SubBulletSymbol\, C++
+\BulletItem
+Other languages: Java \SubBulletSymbol\, Scala \SubBulletSymbol\, SQL \SubBulletSymbol\, PHP
+
+\textbf{Technologies / Frameworks}
+\BulletItem Apache Spark \SubBulletSymbol\, Apache Flink \SubBulletSymbol\, Apache Kafka \SubBulletSymbol\, Docker
+
+%%%%%%%%%%%
+%% LINKS %%
+%%%%%%%%%%%
+
+\section
+{Links}
+{Links}
+{PDF:Links}
+
+\BulletItem
+\href{https://github.com/leandropineda}{github.com/leandropineda}
+\BulletItem
+\href{https://www.linkedin.com/in/leandropineda-lp}{linkedin.com/in/leandropineda-lp}
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+Network Security, Machine Learning, Big Data, Network Infrastructure.
+
+
+%%%%%%%%%%%%%%%
+%% AFICIONES %%
+%%%%%%%%%%%%%%%
+
+\section
+{Hobbies \newline
+	and Crafts}
+{HobbiesCrafts}
+{PDF:HobbiesCrafts}
+
+Gym, Running, Fishing.
+
+
+%%%%%%%%%%%%%%%%%
+%%% REFERENCES %%
+%%%%%%%%%%%%%%%%%
+%
+%\section
+%{References}
+%{References}
+%{PDF:References}
+%
+%\BulletItem
+%\textbf{Professor Jonathan Public}
+%\newline
+%Professor of Geology and Mechanical Engineering
+%\newline
+%First American University
+%\newline
+%1000 First Avenue, Springfield, Massachusetts 22222, USA
+%\newline
+%\href{mailto:jonathanpublic@example.com}
+%{jonathanpublic@example.com}
+%\,\SubBulletSymbol\,
+%+1\,(555)\,222-2222
+%
+%\BigGap
+%\BulletItem
+%\textbf{Dr Alice Bob Carol}
+%\newline
+%Director, Research \& Development
+%\newline
+%Alpha Engineering Firm
+%\newline
+%20 North Street, Oakland, Ohio 33333, USA
+%\newline
+%\href{mailto:alicebobcarol@example.com}
+%{alicebobcarol@example.com}
+%\,\SubBulletSymbol\,
+%+1\,(555)\,333-3333
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SECTION WITH USAGE EXAMPLES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section
+%{Section\newline
+%With\newline
+%Usage\newline
+%Examples}
+%{Section With Usage Examples (For PDF Bookmark)}
+%{PDF:SectionWithUsageExamples:ForPDFLink}
+%
+%\subsection
+%{This is a Subsection}
+%{This is a Subsection}
+%{PDF:ThisIsASubSection}
+%
+%\GapNoBreak
+%\BulletItem
+%Use \CodeCommand{section} and \CodeCommand{subsection} to create sections and subsections.
+%These will appear in the PDF bookmarks too.
+%
+%\GapNoBreak
+%\BulletItem
+%This is the second \CodeCommand{BulletItem}.
+%Long items are automatically indented.
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+%Sed sed aliquam massa.
+%\begin{detail}
+%\SubBulletItem
+%This is a \CodeCommand{SubBulletItem}.
+%Long items are automatically indented.
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+%Sed sed aliquam massa.
+%Aliquam dignissim mi non enim feugiat elementum.
+%Donec sit amet turpis ac velit ultrices volutpat.
+%Aliquam vitae elit massa.
+%\SubBulletItem
+%This is the second \CodeCommand{SubBulletItem}.
+%\SubBulletItem
+%The \CodeCommand{SubBulletItem}'s are between
+%\CodeCommand{begin\{detail\}} and
+%\CodeCommand{end\{detail\}} so that they are typeset in a smaller font.
+%\end{detail}
+%
+%\Gap
+%\BulletItem
+%This is the third \CodeCommand{BulletItem}.
+%
+%\Gap
+%\BulletItem
+%A \CodeCommand{Gap} or \CodeCommand{GapNoBreak} is inserted between the \CodeCommand{BulletItem}'s so that there is a small vertical space between them.
+%The ``NoBreak'' version prevents page breaking, and should be used to avoid orphaned headings and other formatting issues.
+%
+%\BigGap
+%\subsection
+%{This is the Second Subsection}
+%{This is the Second Subsection}
+%{PDF:ThisIsTheSecondSubSection}
+%
+%\GapNoBreak
+%\BulletItem
+%A \CodeCommand{BigGap} or \CodeCommand{BigGapNoBreak} is inserted between subsections so that there is a bigger vertical space between them.
+%The ``NoBreak'' version prevents page breaking.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ANOTHER SECTION WITH USAGE EXAMPLES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section
+%{Another\newline
+%Section\newline
+%With\newline
+%Usage\newline
+%Examples}
+%{Another Section With Usage Examples (For PDF Bookmark)}
+%{PDF:AnotherSectionWithUsageExamples:ForPDFLink}
+%
+%\textbf{This is a Plain Heading},
+%followed by an \CodeCommand{hfill} and a date range
+%\hfill
+%\DatestampYM{2015}{10} --
+%\DatestampYM{2015}{12}
+%
+%\GapNoBreak
+%\BulletItem
+%This is a \CodeCommand{BulletItem}.
+%\begin{detail}
+%\SubBulletItem
+%This is a \CodeCommand{SubBulletItem}.
+%\end{detail}
+%
+%\GapNoBreak
+%\BulletItem
+%This is a \CodeCommand{BulletItem}.
+%\begin{detail}
+%\SubItem
+%This is a \CodeCommand{SubItem}, which has no bullet.
+%Note the alignment with the \CodeCommand{BulletItem} above.
+%\end{detail}
+%
+%\GapNoBreak
+%\Item
+%This is an \CodeCommand{Item}, which has no bullet.
+%Note the alignment with the \CodeCommand{BulletItem} above.
+%\begin{detail}
+%\SubItem
+%This is a \CodeCommand{SubItem}.
+%\end{detail}
+%
+%\GapNoBreak
+%\NumberedItem{[16]}
+%This is a \CodeCommand{NumberedItem}.
+%Note the alignment with the \CodeCommand{SubBulletItem} above.
+%
+%\GapNoBreak
+%\NumberedItem{{\CharSpace}[6]}
+%This is a \CodeCommand{NumberedItem} with a \CodeCommand{CharSpace} in its argument for padding shorter numbers.
+%Note the alignment with the \CodeCommand{NumberedItem} above.
+%
+%\BigGap
+%\textbf{Usage Notes}
+%
+%\GapNoBreak
+%\BulletItem
+%New Lines and Paragraphs
+%\begin{detail}
+%\SubBulletItem
+%To create a new line within the same paragraph (i.e., with the same indentation), use \CodeCommand{newline} instead of \CodeCommand{\textbackslash}.
+%The latter will not work because it breaks the long table.
+%\SubBulletItem
+%To create a new paragraph, use \CodeCommand{par} or simply leave an empty line.
+%Paragraph indentations (from
+%\CodeCommand{Item},
+%\CodeCommand{SubItem},
+%\CodeCommand{BulletItem},
+%\CodeCommand{SubBulletItem},
+%etc.) do not carry across different paragraphs.
+%\end{detail}
+%
+%\Gap
+%\BulletItem
+%Vertical Spacing Between Items
+%\begin{detail}
+%\SubBulletItem
+%Use \CodeCommand{Gap} or \CodeCommand{GapNoBreak} to insert a small vertical space between items within the same section.
+%\SubBulletItem
+%Use \CodeCommand{BigGap} or \CodeCommand{BigGapNoBreak} to insert a bigger vertical space between items within the same section.
+%\SubBulletItem
+%The ``NoBreak'' versions prevent page breaking.
+%\end{detail}
+%
+%\Gap
+%\BulletItem
+%Dates
+%\begin{detail}
+%\SubBulletItem
+%Use
+%\CodeCommand{DatestampYMD\{YYYY\}\{MM\}\{DD\}},
+%\CodeCommand{DatestampYM\{YYYY\}\{MM\}}, and
+%\CodeCommand{DatestampY\{YYYY\}}
+%to specify dates.
+%\SubBulletItem
+%Change the date format option passed to the document class to adjust how dates are displayed throughout the document:
+%MMMyyyy (``Dec~2010''),
+%ddMMMyyyy (``31~Dec~2010''),
+%MMMMyyyy (``December~2010''),
+%ddMMMMyyyy (``31~December~2010''),
+%yyyyMMdd (``2010-12-31''),
+%yyyyMM (``2010-12''),
+%yyyy (``2010'').
+%\end{detail}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% MULTILINGUAL UNICODE EXAMPLES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section
+%{Multilingual Unicode Examples}
+%{Multilingual Unicode Examples}
+%{PDF:MultilingualUnicodeExamples}
+%
+%\BulletItem
+%Assortment of unicode characters from
+%\href{http://www.ltg.ed.ac.uk/~richard/unicode-sample.html}
+%{http://www.ltg.ed.ac.uk/{\TildeSymbol}richard/unicode-sample.html}
+%
+%\begin{detail}
+%\SubItem
+%\textbf{Latin Extended-A}
+%Ā ā Ă ă Ą ą Ć ć Ĉ ĉ Ċ ċ Č č Ď ď Đ đ Ē ē Ĕ ĕ Ė ė Ę ę Ě ě Ĝ ĝ Ğ ğ Ġ ġ Ģ ģ Ĥ ĥ Ħ ħ Ĩ ĩ Ī ī Ĭ ĭ Į į İ ı Ĳ ĳ Ĵ ĵ
+%\textbf{Latin Extended-B}
+%ƀ Ɓ Ƃ ƃ Ƅ ƅ Ɔ Ƈ ƈ Ɖ Ɗ Ƌ ƌ ƍ Ǝ Ə Ɛ Ƒ ƒ Ɠ Ɣ ƕ Ɩ Ɨ Ƙ ƙ ƚ ƛ Ɯ Ɲ ƞ Ɵ Ơ ơ Ƣ ƣ Ƥ ƥ Ʀ Ƨ ƨ Ʃ ƪ ƫ Ƭ ƭ Ʈ Ư ư Ʊ Ʋ Ƴ ƴ Ƶ
+%\textbf{Latin Extended Additional}
+%Ḁ ḁ Ḃ ḃ Ḅ ḅ Ḇ ḇ Ḉ ḉ Ḋ ḋ Ḍ ḍ Ḏ ḏ Ḑ ḑ Ḓ ḓ Ḕ ḕ Ḗ ḗ Ḙ ḙ Ḛ ḛ Ḝ ḝ Ḟ ḟ Ḡ ḡ Ḣ ḣ Ḥ ḥ Ḧ ḧ Ḩ ḩ Ḫ ḫ Ḭ ḭ Ḯ ḯ Ḱ ḱ Ḳ ḳ Ḵ ḵ
+%\textbf{Greek}
+%ʹ ͵ ͺ ; ΄ ΅ Ά · Έ Ή Ί Ό Ύ Ώ ΐ Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω Ϊ Ϋ ά έ ή ί ΰ α β γ δ ε ζ η θ
+%\textbf{Cyrillic}
+%Ё Ђ Ѓ Є Ѕ І Ї Ј Љ Њ Ћ Ќ Ў Џ А Б В Г Д Е Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я а б в г д е ж з
+%\textbf{Hebrew}
+%א ב ג ד ה ו ז ח ט י ך כ ל ם מ ן נ ס ע ף פ ץ צ ק ר ש ת װ ױ ײ ֝ ֞ ֟ ֠ ֡ ֣ ֤ ֥ ֦ ֧ ֨ ֩ ֪ ֫ ֬ ֭ ֮ ֯ ְ ֱ ֒ ֓ ֔
+%\textbf{Armenian}
+%{\UseSecondaryFont
+%Ա Բ Գ Դ Ե Զ Է Ը Թ Ժ Ի Լ Խ Ծ Կ Հ Ձ Ղ Ճ Մ Յ Ն Շ Ո Չ Պ Ջ Ռ Ս Վ Տ Ր Ց Ւ Փ Ք Օ Ֆ ՙ ՚ ՛ ՜ ՝ ՞ ՟ ա բ գ դ ե զ}
+%\textbf{Thai}
+%{\UseSecondaryFont
+%ก ข ฃ ค ฅ ฆ ง จ ฉ ช ซ ฌ ญ ฎ ฏ ฐ ฑ ฒ ณ ด ต ถ ท ธ น บ ป ผ ฝ พ ฟ ภ ม ย ร ฤ ล ฦ ว ศ ษ ส ห ฬ อ ฮ ฯ ะ ั า ำ ิ}
+%\end{detail}
+%
+\end{body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\UseNoteFont%
+\null\hfill%
+\textit{\CVNote}%
+\hspace{2.0mm}\null
+
+\end{document}
