@@ -53,8 +53,12 @@ bookmarksopen=true,
 pdfstartview=FitH,
 pdfpagelayout=OneColumn,
 pdfpagemode=UseOutlines,
-hidelinks,
-breaklinks}
+colorlinks=true,       % false: boxed links; true: colored links
+linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+citecolor=green,        % color of links to bibliography
+filecolor=magenta,      % color of file links
+urlcolor=cyan           % color of external links
+}
 
 % Shorthand.
 \newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
@@ -96,21 +100,20 @@ Ibarbalz 752, 17B T2, Córdoba, Argentina\, \SubBulletSymbol\, 29 years old
 Santa Fe, Santa Fe, Argentina
 \hfill
 \DatestampY{2009} --
-Today
+\DatestampY{2018}
 
 \BulletItem Facultad de Ingeniería y Ciencias Hídricas
 \begin{detail}
 	\SubBulletItem
-	Degree in Computer Engineering, expected graduation 2018.
+	Engineer's Degree: \href{http://fich.unl.edu.ar/planificaciones/carrera.php?id=3}{Computer Engineering}.
 	\SubBulletItem
-	Approved courses: 39 \SubBulletSymbol\, Progress: 96.55\%.
-	\SubBulletItem Partial G.P.A.: 8.08.
-
+	G.P.A.: 8.10.
 \end{detail}
-\BulletItem	Thesis: Designing a computer network anomaly detection system.
+\BulletItem	Thesis: \href{https://github.com/leandropineda/sketch-ws}{Designing a computer network anomaly detection system}.
 \begin{detail}
 	\SubBulletItem
 	Goal: design and build a distributed system for anomalous behaviour detection, analysing network traffic and log files content from different application services like apache and mysql. This will be accomplished using \textit{data streaming} techniques for processing data from different sources in a real-time fashion.
+
 	
 \end{detail}
 
@@ -335,7 +338,9 @@ Today
 	\SubBulletItem
 	Automation.
 	\SubBulletItem
-	Endpoint Forensics.
+	Scrum Master.
+	\SubBulletItem
+	Developing solutions for Enterprise security.
 \end{detail}
 
 
@@ -369,7 +374,7 @@ DevOps at project: \href{https://bitbucket.org/sinc-lab/webdemobuilder-docker}{h
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{FOR508: Advanced Digital Forensics, Incident Response, and Threat Hunting.}
+\href{https://www.sans.org/course/advanced-incident-response-threat-hunting-training}{\textbf{FOR508: Advanced Digital Forensics, Incident Response, and Threat Hunting}}
 \hfill
 \DatestampYM{2018}{02}
 
@@ -378,15 +383,13 @@ DevOps at project: \href{https://bitbucket.org/sinc-lab/webdemobuilder-docker}{h
 	\SubBulletItem 
 	Topics: detect how and when a breach occurred, identify compromised and affected systems, determine what attackers took or changed, contain and remediate incidents, develop key sources of threat intelligence, hunt down additional breaches using knowledge of the adversary.	
 	\SubBulletItem
-	Course: \href{https://www.sans.org/course/advanced-incident-response-threat-hunting-training}{https://www.sans.org/course/advanced-incident-response-threat-hunting-training}
-	\SubBulletItem
 	Certificate: \href{https://www.youracclaim.com/badges/3b26b130-d265-4d5e-9d8f-cd6fdc95c925/public\_url}{https://www.youracclaim.com/badges/3b26b130-d265-4d5e-9d8f-cd6fdc95c925/public\_url}
 \end{detail}
 Duration: 6 days.
 
 \BigGap
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{LAN under MikroTik: Layer 1 \& 2.}
+\textbf{LAN under MikroTik: Layer 1 \& 2}
 \hfill
 \DatestampYM{2016}{10}
 
@@ -401,28 +404,28 @@ Duration: 32 hours \SubBulletSymbol\, Santa Fe, Argentina.
 
 \BigGap
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{Functional Programming Principles in Scala}
+\href{https://www.coursera.org/learn/progfun1}{\textbf{Functional Programming Principles in Scala}}
 \hfill
 \DatestampYM{2016}{07}
 
-\BulletItem École Polytechnique Fédérale de Lausanne en \href{coursera.org}{http://www.coursera.org}.
+\BulletItem École Polytechnique Fédérale de Lausanne at \href{https://www.coursera.org/}{www.coursera.org}.
 \begin{detail}
 	\SubBulletItem
 	Topics: Functions \& Evaluation. Higher Order Functions. Data and Abstraction. Types and Pattern Matching. Lists. Collections
 	\SubBulletItem
-	Certificate: \href{https://www.coursera.org/account/accomplishments/records/XP7CXSHS2PV8}
-	{https://www.coursera.org/account/accomplishments/records/XP7CXSHS2PV8}
+	Certificate: \href{https://www.coursera.org/account/accomplishments/records/H6WQNR37R6Y5}
+	{https://www.coursera.org/account/accomplishments/records/H6WQNR37R6Y5}
 	
 \end{detail}
 
 
 \BigGap
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{6.00.1x: Introduction to Computer Science and Programming Using Python }
+\href{https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python}{\textbf{6.00.1x: Introduction to Computer Science and Programming Using Python}}
 \hfill
 \DatestampYM{2016}{03}
 
-\BulletItem  edx, Inc. (MOOC platform)
+\BulletItem Massachusetts Institute of Technology at \href{http://www.edx.org/}{www.edx.org}.
 \begin{detail}
 	\SubBulletItem
 	Topics: Introduction. Core elements of programs. Simple algorithms. Functions. Recursion. Objects. Debugging. Assertions and Exceptions. Efficiency and orders of growth. Memory and search. Classes. Object Oriented Programming	and Inheritance. Trees.
@@ -457,18 +460,21 @@ Duration: 20 hours \SubBulletSymbol\, Santa Fe, Argentina.
 {PDF:ConferencesSeminars}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{RSA Conference}
+\href{https://www.rsaconference.com/events/us18}{\textbf{RSA Conference}}
 \hfill
 \DatestampYM{2018}{04}
 
 \BulletItem Moscone Center.
-
+\begin{detail}
+	\SubBulletItem
+	RSA Conference conducts information security events around the globe that connect you to industry leaders and highly relevant information.
+\end{detail}
 Duration: 3 days \SubBulletSymbol\, San Francisco, California.
 
 \BigGap
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{Ekoparty Security Conference}
+\href{https://www.ekoparty.org/acerca-ekoparty.php}{\textbf{Ekoparty Security Conference}}
 \hfill
 \DatestampYM{2017}{09}
 
@@ -482,7 +488,7 @@ Duration: 3 days \SubBulletSymbol\, Buenos Aires, Argentina.
 \BigGap
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{45º JAIIO - Jornadas Argentinas de Informática}
+\href{http://45jaiio.sadio.org.ar/}{\textbf{45º JAIIO - Jornadas Argentinas de Informática}}
 \hfill
 \DatestampYM{2016}{09}
 
@@ -573,7 +579,7 @@ Duration: 6 hours \SubBulletSymbol\, Santa Fe, Argentina.
 {PDF:Languages}
 
 \BulletItem
-English: Medium.
+English: Professional working proficiency.
 
 \GapNoBreak
 \BulletItem
@@ -592,12 +598,14 @@ Dual Citizenship: Argentine/Spanish
 {PDF:Skills}
 
 \textbf{Programming}
+\BulletItem Python \SubBulletSymbol\, C++ \SubBulletSymbol\, Java \SubBulletSymbol\, Bash
+
+\textbf{Tools}
 \BulletItem
-Advanced Knowledge: Python \SubBulletSymbol\, C++
+Technologies / Framework: Docker \SubBulletSymbol\, Flask \SubBulletSymbol\, Redis \SubBulletSymbol\, Kubernetes
 \BulletItem
-Other languages: Java \SubBulletSymbol\, Bash
-\BulletItem
-Technologies / Framework: Docker \SubBulletSymbol\, Flask
+Other Tools: JIRA \SubBulletSymbol\, TeamCity
+
 
 %%%%%%%%%%%
 %% LINKS %%
